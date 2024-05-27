@@ -8,7 +8,7 @@ import {
   Box,
   Typography,
   Container,
-  Alert
+//   Alert
 } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
@@ -47,7 +47,7 @@ const Login: React.FC<LoginProps> = ({ setToken, setUser }) => {
     //   setUser(email);
     //   navigate('/dashboard');
     // }
-    navigate('/');
+    navigate('/dashboard');
   };
 
   const defaultTheme = createTheme();
@@ -67,7 +67,7 @@ const Login: React.FC<LoginProps> = ({ setToken, setUser }) => {
           <Typography component='h1' variant='h5'>
             Log In
           </Typography>
-          { showAlert && (<Alert severity='error' style={{ marginTop: '1rem' }}>{errorMsg}</Alert>) }
+          {/* { showAlert && (<Alert severity='error' style={{ marginTop: '1rem' }}>{errorMsg}</Alert>) } */}
           <Box component='form' noValidate sx={{ mt: 1 }}>
             <TextField
               margin='normal'
