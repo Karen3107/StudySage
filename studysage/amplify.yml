@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: ./src
+  - appRoot: ./studysage
     frontend:
       phases:
         preBuild:
