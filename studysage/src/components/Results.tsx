@@ -23,7 +23,7 @@ const Results: React.FC<ResultsProps> = () => {
     { name: 'Subject 5', description: 'Description for Subject 5...' },
     { name: 'Subject 6', description: 'Description for Subject 6...' }
   ]);
-  
+
   return (
     <>
       <Typography variant='h2'>Results</Typography>
@@ -34,8 +34,10 @@ const Results: React.FC<ResultsProps> = () => {
             aria-controls={`panel-content-${index}`}
             id={`panel-header-${index}`}
           >
-            <Typography>{subject.name}</Typography>
-            <Typography>80% Match</Typography>
+            <div>
+              <Typography>{subject.name}</Typography>
+              <Typography>80% Match</Typography>
+            </div>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
