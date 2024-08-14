@@ -1,6 +1,6 @@
 version: 1
 applications:
-  - appRoot: studysage
+  - appRoot: ./src
     frontend:
       phases:
         preBuild:
@@ -10,7 +10,7 @@ applications:
           commands:
             - npm run build
       artifacts:
-        baseDirectory: studysage/build
+        baseDirectory: build
         files:
           - '**/*'
       cache:
